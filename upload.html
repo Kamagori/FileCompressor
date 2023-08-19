@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload de Arquivos</title>
+</head>
+<body>
+    <h1>Upload de Arquivos</h1>
+    <form action="http://localhost:5000/upload" method="post" enctype="multipart/form-data">
+        <!-- Cria um formulário com o método POST e define a URL do servidor para onde os dados serão enviados -->
+        
+        <label for="file">Selecione um arquivo:</label><br> <!-- Rótulo para o campo de seleção de arquivo -->
+        <input type="file" id="file" name="files[]" accept=".png, .jpg, .jpeg, .txt" multiple><br>
+        <!-- Cria um campo de seleção de arquivo para o usuário selecionar um ou vários arquivos -->
+        <!-- O atributo "id" é usado para associar o rótulo ao campo de seleção de arquivo -->
+        <!-- O atributo "name" define o nome do campo de entrada, que será usado para enviar o arquivo para o servidor -->
+        <!-- O atributo "accept" especifica os tipos de arquivos que podem ser selecionados pelo usuário -->
+        <!-- O atributo "multiple" permite que o usuário selecione vários arquivos ao mesmo tempo -->
+        
+        <input type="submit" value="Enviar"> <!-- Cria um botão de envio para enviar o formulário para o servidor -->
+    </form>
+</body>
+</html>
